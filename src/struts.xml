@@ -7,8 +7,9 @@
 
     <package name="default" namespace="/" extends="struts-default">
 
-        <action name="today" class="action.HelloAction">
-            <result name="success">hello.jsp</result>
+        <action name="updateSalary" class="action.UpdateSalaryAction">
+            <result name="success">update_salary.jsp</result>
+            <result name="failure">update_salary.jsp</result>
         </action>
         
         <action name="hello" class="action.HelloAction">
