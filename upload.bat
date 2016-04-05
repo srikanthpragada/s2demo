@@ -1,3 +1,3 @@
 git add .
-git commit -m "Updated"
+git commit -m %1
 git push s2demo master

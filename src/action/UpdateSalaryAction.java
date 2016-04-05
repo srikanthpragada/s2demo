@@ -10,6 +10,17 @@ public class UpdateSalaryAction extends ActionSupport {
 
 	private int empid, salary;
 	private String message;
+	
+
+	@Override
+	public void validate() {
+       super.validate();
+       if ( empid < 100 )
+    	   addFieldError("empid", "Invalid Employee Id");
+       
+       if ( salary < 1000 )
+    	   addFieldError("salary", "Invalid Salary");
+	}
 
 	public int getEmpid() {
 		return empid;
