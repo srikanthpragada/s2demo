@@ -12,21 +12,22 @@ public class UpdateSalaryAction extends ActionSupport {
 	private String message;
 	
 
-	@Override
-	public void validate() {
-       super.validate();
-       if ( empid < 100 )
-    	   addFieldError("empid", "Invalid Employee Id");
-       
-       if ( salary < 1000 )
-    	   addFieldError("salary", "Invalid Salary");
-	}
+//	@Override
+//	public void validate() {
+//       super.validate();
+//       if ( empid < 100 )
+//    	   addFieldError("empid", "Invalid Employee Id");
+//       
+//       if ( salary < 1000 )
+//    	   addFieldError("salary", "Invalid Salary");
+//	}
 
 	public int getEmpid() {
 		return empid;
 	}
 
 	public void setEmpid(int empid) {
+		System.out.println("setEmpid()");
 		this.empid = empid;
 	}
 
@@ -47,6 +48,7 @@ public class UpdateSalaryAction extends ActionSupport {
 	}
 
 	public String execute() {
+		System.out.println("execute()");
 //		System.out.println(empid);
 //		System.out.println(salary);
 		

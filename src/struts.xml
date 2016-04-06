@@ -7,6 +7,7 @@
 
     <package name="default" namespace="/" extends="struts-default">
 
+<!-- 
         <action name="updateSalary" class="action.UpdateSalaryAction">
             <result name="success">update_salary.jsp</result>
             <result name="failure">update_salary.jsp</result>
@@ -20,7 +21,7 @@
         <action name="jobs" class="action.JobsAction">
             <result name="success">/WEB-INF/content/jobs.jsp</result>
         </action>
-        
+ -->        
         
     </package>
     

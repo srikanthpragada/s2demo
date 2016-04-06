@@ -9,11 +9,13 @@
 </head>
 <body>
 	<h1>Update Salary</h1>
-	<s:form action="updateSalary">
+	<s:form action="updateSalary"  validate="true">
 	   <s:textfield name="empid" label="Employee Id"   ></s:textfield>
 	   <s:textfield name="salary" label="Salary"></s:textfield>
 	   <s:submit value="Update Salary"></s:submit>
 	</s:form>
+	
+    <s:fielderror fieldName="empid"></s:fielderror>
     <h3>
       <s:property value="message" />
     </h3>
