@@ -6,6 +6,14 @@
 <struts>
 
     <package name="default" namespace="/" extends="struts-default">
+      <action name="now" class="action.NowAction">
+           <result name="success">now.jsp</result>
+      </action>
+      
+       <action name="uploadFile" class="action.FileUploadAction">
+           <result name="success">fileupload.jsp</result>
+      </action>
+        
 
 <!-- 
         <action name="updateSalary" class="action.UpdateSalaryAction">
