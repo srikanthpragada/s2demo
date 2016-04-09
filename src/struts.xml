@@ -5,13 +5,26 @@
 
 <struts>
 
+    <constant name="struts.custom.i18n.resources" value="messages" />
+
     <package name="default" namespace="/" extends="struts-default">
+      <result-types>
+         <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult"></result-type>
+      </result-types>
       <action name="now" class="action.NowAction">
            <result name="success">now.jsp</result>
       </action>
       
        <action name="uploadFile" class="action.FileUploadAction">
            <result name="success">fileupload.jsp</result>
+      </action>
+      
+      <action name="page1" class="action.Page1Action">
+            <result name="page1" type="tiles">page1</result>
+      </action>
+      
+      <action name="page2" class="action.Page2Action">
+            <result name="page2" type="tiles">page2</result>
       </action>
         
 
